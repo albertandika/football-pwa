@@ -1,0 +1,43 @@
+ .parallax-container{
+    height: 350px;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+
+.table-sticky thead th{
+    position: sticky;
+    top: 0;
+    background:#e8eaf6;
+    z-index: 1;
+}
+
+.badge-elipse{
+    border-radius: 50%;
+}
+
+.font-matches{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.f-500{
+    font-weight: 500;
+}
+
+.mb-1{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.img-detail-team{
+    width: 150px;
+    height: 150px;
+}

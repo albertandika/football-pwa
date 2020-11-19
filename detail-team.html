@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Premier League</title>
+    <meta name="description" content="Football News Premier League" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="shortcut icon" href="assets/icon/icon-48.png">
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#F39435" />
+
+</head>
+
+<body>
+    <nav class="orange" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo center" id="logo-container">Premier League</a>
+            <a href="./index.html" data-target="nav-mobile">
+                <i class="material-icons">arrow_back</i>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="card indigo lighten-5">
+                        <div class="card-content">
+                            <div class="center-align">
+                                <img id="img-club" class="img-detail-team" alt="logo team" align="center" width="100%"
+                                    height="100" vspace="25" src="assets/default-club.png">
+                                <h4 id="name-club"></h4>
+                            </div>
+                        </div>
+                        <div class="card-tabs">
+                            <div class="card-content ">
+                                <div id="club-details">
+                                </div>
+                                <div class="divider"></div>
+                                <div class="center-align">
+                                    <h5>Squad Team</h5>
+                                </div>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Nationality</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="squad-team"></tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large orange" id="save">
+                <i class="large material-icons ">favorite_border</i>
+            </a>
+        </div>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large orange" id="delete">
+                <i class="large material-icons">favorite</i>
+            </a>
+        </div>
+
+    </main>
+    <!-- footer -->
+
+    <footer class="page-footer grey darken-1">
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2020 Copyright Premiere League
+            </div>
+        </div>
+    </footer>
+    <script src="component/detailTeam.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/save-button.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/sw.js"></script>
+</body>
+
+</html>
