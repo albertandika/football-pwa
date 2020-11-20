@@ -107,7 +107,6 @@ function getDetailTeamById() {
       .then(status)
       .then(json)
       .then(function (data) {
-        console.log(data);
         detailTeams(data)
         resolve(data);
       })
